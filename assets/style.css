@@ -35,6 +35,7 @@ main{
   background-color: black;
   min-height: 100px;
   min-width: 200px;
+  color: red;
 }
 
 .options{
@@ -65,4 +66,12 @@ min-height: 75px;
 max-height: 75px;
 height: 75px;
 width: 75px;
+}
+
+.option-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }

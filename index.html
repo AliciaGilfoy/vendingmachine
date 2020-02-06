@@ -20,39 +20,228 @@
         <h1 class="text-center">Vending Machine</h1>
     </header>
     <main class="container">
-        <div class="col-2">
+        <div class="col-4">
             <div class="col-12">
-                <button class="btn btn-warning">Restock</button>
+                <div class="form-group">
+                    <label for="" class="h3 text-white">Want to buy something?</label>
+                    <input type="number" min="0" name="enterMoney" id="enterMoney" class="form-control col-8"
+                        placeholder="How much money?" aria-describedby="helpId">
+                    <button type="submit" class="btn btn-warning">Enter</button>
+                </div>
+            </div>
+            <div class="col-12">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#restockoptions">
+                    Restock Vending Machine
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="restockoptions" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">What would you like to restock?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body option-body">
+                                <!-- NOTE  this is the chips modal -->
+                                <button type="button" class="btn btn-primary m-2" data-toggle="modal"
+                                    data-target="#addChips">
+                                    Restock Chips
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="addChips" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Enter Chip Information
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <label for="">Brand</label>
+                                                        <input type="text" name="chipBrand" id="chipBrand"
+                                                            class="form-control" placeholder="Enter chip brand here..."
+                                                            aria-describedby="helpId">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">img</label>
+                                                        <input type="text" name="chipImg" id="chipImg"
+                                                            class="form-control" placeholder="Enter chip image here..."
+                                                            aria-describedby="helpId">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">Price</label>
+                                                        <input type="number" name="chipPrice" id="chipPrice"
+                                                            class="form-control" placeholder="Enter chip price here..."
+                                                            aria-describedby="helpId">
+                                                    </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-primary">Restock</button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- NOTE  this is the Candy modal -->
+                                <button type="button" class="btn btn-primary m-2" data-toggle="modal"
+                                    data-target="#restockCandy">
+                                    Restock Candy
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="restockCandy" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Enter Candy Information
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <label for="">Brand</label>
+                                                        <input type="text" name="candyBrand" id="candyBrand"
+                                                            class="form-control" placeholder="Enter candy brand here..."
+                                                            aria-describedby="helpId">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">img</label>
+                                                        <input type="text" name="candyImg" id="candyImg"
+                                                            class="form-control" placeholder="Enter candy image here..."
+                                                            aria-describedby="helpId">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">Price</label>
+                                                        <input type="number" name="candyPrice" id="candyPrice"
+                                                            class="form-control" placeholder="Enter candy price here..."
+                                                            aria-describedby="helpId">
+                                                    </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary">Restock</button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- NOTE  this is the soda modal -->
+                                <button type="button" class="btn btn-primary m-2" data-toggle="modal"
+                                    data-target="#restockSoda">
+                                    Restock Soda
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="restockSoda" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Enter Soda Information
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <label for="">Brand</label>
+                                                        <input type="text" name="sodaBrand" id="sodaBrand"
+                                                            class="form-control" placeholder="Enter soda brand here..."
+                                                            aria-describedby="helpId">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">img</label>
+                                                        <input type="text" name="sodaImg" id="sodaImg"
+                                                            class="form-control" placeholder="Enter soda image here..."
+                                                            aria-describedby="helpId">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">Price</label>
+                                                        <input type="number" name="sodaPrice" id="sodaPrice"
+                                                            class="form-control" placeholder="Enter soda price here..."
+                                                            aria-describedby="helpId">
+                                                    </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary">Restock</button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-8 machine">
             <div class="col-12 text-center h3 row-title">Chips</div>
             <div class="col-12 item-row" id="chipRow">
                 <div class="col-3 options">
-                    <h5>Brand</h5>
-                    <img class="item-img" height="75px" width="25px" src="" alt="">
-                    <p class="m-0 p-0">Price: $<span>1</span></p>
-                    <button class="btn btn-success">Buy</button>
+                    <h5>Sorry Empty</h5>
                 </div>
-                <div class="col-3 options"></div>
-                <div class="col-3 options"></div>
-                <div class="col-3 options"></div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
             </div>
             <div class="col-12 text-center h3 row-title">Candy</div>
             <div class="col-12 item-row" id="candyRow">
-                <div class="col-3 options"></div>
-                <div class="col-3 options"></div>
-                <div class="col-3 options"></div>
-                <div class="col-3 options"></div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
             </div>
             <div class="col-12 text-center h3 row-title">Soda</div>
             <div class="col-12 item-row" id="drinkRow">
-                <div class="col-3 options"></div>
-                <div class="col-3 options"></div>
-                <div class="col-3 options"></div>
-                <div class="col-3 options"></div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
+                <div class="col-3 options">
+                    <h5>Sorry Empty</h5>
+                </div>
             </div>
             <div class="col-12 item-row" id="product">
+                <div class="col-4 h4">Balance: $<span id="balance">0</span></div>
                 <div class="col-4 h3">Pick up <i class="fas fa-arrow-right"></i></div>
                 <div class="col-4 purchase-box"></div>
             </div>
