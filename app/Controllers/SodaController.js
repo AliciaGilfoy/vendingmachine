@@ -19,13 +19,13 @@ export default class SodaController {
 
   constructor() {
     console.log("soda controller works")
+    _draw()
   }
   addSoda(event) {
     event.preventDefault();
     let formData = event.target;
     let newSoda = {
       sodaBrand: formData.sodaBrand.value,
-      sodaImg: formData.sodaImg.value,
       sodaPrice: formData.sodaPrice.value
     }
     console.log(newSoda)

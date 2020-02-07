@@ -3,8 +3,9 @@ import _store from "../store.js"
 
 class ChipService {
   deleteChip(id) {
-    let chips = _store.State.chips.filter(chip => chip.id !== id)
-    _store.State.chips = chips
+    let chips = _store.State.chips.find(chip => chip.id == id)
+    // _store.State.chips -= chips
+    console.log(chips)
     _store.saveState()
   }
   addChip(newChip) {

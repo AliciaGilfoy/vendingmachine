@@ -20,13 +20,13 @@ export default class CandyController {
 
   constructor() {
     console.log("candy controller works")
+    _draw()
   }
   addCandy(event) {
     event.preventDefault();
     let formData = event.target;
     let newCandy = {
       candyBrand: formData.candyBrand.value,
-      candyImg: formData.candyImg.value,
       candyPrice: formData.candyPrice.value
     }
     console.log(newCandy)

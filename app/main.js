@@ -6,8 +6,8 @@ import SodaController from "./Controllers/SodaController.js"
 class App {
   valuesController = new ValuesController();
   chipController = new ChipController();
-  CandyController = new CandyController();
-  SodaController = new SodaController();
+  candyController = new CandyController();
+  sodaController = new SodaController();
 }
 
 window["app"] = new App();

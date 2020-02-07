@@ -20,13 +20,13 @@ export default class ChipController {
 
   constructor() {
     console.log("chip controller works")
+    _draw()
   }
   addChip(event) {
     event.preventDefault();
     let formData = event.target;
     let newChip = {
       chipBrand: formData.chipBrand.value,
-      chipImg: formData.chipImg.value,
       chipPrice: formData.chipPrice.value
     }
     console.log(newChip)
