@@ -3,9 +3,8 @@ import _store from "../store.js"
 
 class ChipService {
   deleteChip(id) {
-    let chips = _store.State.chips.find(chip => chip.id == id)
-    // _store.State.chips -= chips
-    console.log(chips)
+    let newChips = _store.State.chips.filter(chip => chip.id !== id)
+    _store.State.chips = newChips
     _store.saveState()
   }
   addChip(newChip) {
@@ -15,7 +14,7 @@ class ChipService {
   }
 
   constructor() {
-    console.log("chip service works")
+
   }
 
 

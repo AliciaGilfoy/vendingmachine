@@ -18,7 +18,6 @@ function _draw() {
 export default class SodaController {
 
   constructor() {
-    console.log("soda controller works")
     _draw()
   }
   addSoda(event) {
@@ -28,9 +27,11 @@ export default class SodaController {
       sodaBrand: formData.sodaBrand.value,
       sodaPrice: formData.sodaPrice.value
     }
-    console.log(newSoda)
 
     _sodaService.addSoda(newSoda)
+    formData.reset()
+    // @ts-ignore
+    $('#soda-form').modal('toggle');
     _draw()
   }
 

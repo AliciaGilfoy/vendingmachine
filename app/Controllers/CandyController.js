@@ -19,7 +19,6 @@ export default class CandyController {
 
 
   constructor() {
-    console.log("candy controller works")
     _draw()
   }
   addCandy(event) {
@@ -29,9 +28,11 @@ export default class CandyController {
       candyBrand: formData.candyBrand.value,
       candyPrice: formData.candyPrice.value
     }
-    console.log(newCandy)
 
     _candyService.addCandy(newCandy)
+    formData.reset()
+    // @ts-ignore
+    $('#candy-form').modal('toggle');
     _draw()
   }
 

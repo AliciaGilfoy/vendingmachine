@@ -30,7 +30,6 @@ class Store {
    * Provides access to application state data
    */
   get State() {
-    console.log("store chips", _state.chips)
     return _state;
   }
   saveState() {

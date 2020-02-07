@@ -50,7 +50,7 @@
                                 <!-- NOTE  this is the chips modal -->
                                 <button type="button" class="btn btn-primary m-2" data-toggle="modal"
                                     data-target="#addChips">
-                                    Restock Chips
+                                    Restock Robots
                                 </button>
 
                                 <!-- Modal -->
@@ -59,7 +59,7 @@
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Enter Chip Information
+                                                <h5 class="modal-title" id="exampleModalLabel">Enter Robot Information
                                                 </h5>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
@@ -67,18 +67,18 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <form onsubmit="app.chipController.addChip(event)">
+                                                <form onsubmit="app.chipController.addChip(event)" id="chip-form">
                                                     <div class="form-group">
-                                                        <label for="">Brand</label>
+                                                        <label for="">Name</label>
                                                         <input type="text" name="chipBrand" id="chipBrand"
-                                                            class="form-control" placeholder="Enter chip brand here..."
-                                                            aria-describedby="helpId">
+                                                            class="form-control" placeholder="Enter name here..."
+                                                            aria-describedby="helpId" required>
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="">Price</label>
                                                         <input type="number" name="chipPrice" id="chipPrice"
-                                                            class="form-control" placeholder="Enter chip price here..."
-                                                            aria-describedby="helpId">
+                                                            class="form-control" placeholder="Enter price here..."
+                                                            aria-describedby="helpId" required>
                                                     </div>
                                             </div>
                                             <div class="modal-footer">
@@ -91,7 +91,7 @@
                                 <!-- NOTE  this is the Candy modal -->
                                 <button type="button" class="btn btn-primary m-2" data-toggle="modal"
                                     data-target="#restockCandy">
-                                    Restock Candy
+                                    Restock Monsters
                                 </button>
 
                                 <!-- Modal -->
@@ -100,7 +100,7 @@
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Enter Candy Information
+                                                <h5 class="modal-title" id="exampleModalLabel">Enter Monster Information
                                                 </h5>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
@@ -108,22 +108,22 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <form onsubmit="app.candyController.addCandy(event)">
+                                                <form onsubmit="app.candyController.addCandy(event)" id="candy-form">
                                                     <div class="form-group">
-                                                        <label for="">Brand</label>
+                                                        <label for="">Name</label>
                                                         <input type="text" name="candyBrand" id="candyBrand"
-                                                            class="form-control" placeholder="Enter candy brand here..."
-                                                            aria-describedby="helpId">
+                                                            class="form-control" placeholder="Enter name here..."
+                                                            aria-describedby="helpId" required>
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="">Price</label>
                                                         <input type="number" name="candyPrice" id="candyPrice"
-                                                            class="form-control" placeholder="Enter candy price here..."
-                                                            aria-describedby="helpId">
+                                                            class="form-control" placeholder="Enter price here..."
+                                                            aria-describedby="helpId" required>
                                                     </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary">Restock</button>
+                                                <button type="submit" class="btn btn-primary">Restock</button>
                                             </div>
                                             </form>
                                         </div>
@@ -132,7 +132,7 @@
                                 <!-- NOTE  this is the soda modal -->
                                 <button type="button" class="btn btn-primary m-2" data-toggle="modal"
                                     data-target="#restockSoda">
-                                    Restock Soda
+                                    Restock Cats
                                 </button>
 
                                 <!-- Modal -->
@@ -141,7 +141,7 @@
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Enter Soda Information
+                                                <h5 class="modal-title" id="exampleModalLabel">Enter Cat Information
                                                 </h5>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
@@ -149,22 +149,22 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <form onsubmit="app.sodaController.addSoda(event)">
+                                                <form onsubmit="app.sodaController.addSoda(event)" id="soda-form">
                                                     <div class="form-group">
-                                                        <label for="">Brand</label>
+                                                        <label for="">Name</label>
                                                         <input type="text" name="sodaBrand" id="sodaBrand"
-                                                            class="form-control" placeholder="Enter soda brand here..."
-                                                            aria-describedby="helpId">
+                                                            class="form-control" placeholder="Enter name here..."
+                                                            aria-describedby="helpId" required>
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="">Price</label>
                                                         <input type="number" name="sodaPrice" id="sodaPrice"
-                                                            class="form-control" placeholder="Enter soda price here..."
-                                                            aria-describedby="helpId">
+                                                            class="form-control" placeholder="Enter price here..."
+                                                            aria-describedby="helpId" required>
                                                     </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary">Restock</button>
+                                                <button type="submit" class="btn btn-primary">Restock</button>
                                             </div>
                                             </form>
                                         </div>
@@ -177,55 +177,16 @@
             </div>
         </div>
         <div class="col-8 machine">
-            <div class="col-12 text-center h3 row-title">Chips</div>
-            <div class="col-12 item-row" id="chipRow">
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-            </div>
-            <div class="col-12 text-center h3 row-title">Candy</div>
-            <div class="col-12 item-row" id="candyRow">
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-            </div>
-            <div class="col-12 text-center h3 row-title">Soda</div>
-            <div class="col-12 item-row" id="drinkRow">
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-                <div class="col-3 options">
-                    <h5>Sorry Empty</h5>
-                </div>
-            </div>
+            <div class="col-12 text-center h3 row-title">Robots</div>
+            <div class="col-12 item-row" id="chipRow"></div>
+            <div class="col-12 text-center h3 row-title">Monsters</div>
+            <div class="col-12 item-row" id="candyRow"></div>
+            <div class="col-12 text-center h3 row-title">Cats</div>
+            <div class="col-12 item-row" id="sodaRow"></div>
             <div class="col-12 item-row" id="product">
                 <div class="col-4 h4">Balance: $<span id="balance">0</span></div>
                 <div class="col-4 h3">Pick up <i class="fas fa-arrow-right"></i></div>
-                <div class="col-4 purchase-box"></div>
+                <div class="col-4 purchase-box" id="purchase"></div>
             </div>
         </div>
 

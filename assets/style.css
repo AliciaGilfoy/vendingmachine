@@ -13,21 +13,23 @@ main{
   border: 10px solid black;
   border-radius: .50rem;
   background-color: white;
-  max-height: 780px;
   margin: 2rem;
   display: flex;
   flex-direction: column;
   align-content: space-around;
-  padding: 0;
+  padding: 1rem;
 }
 
 .item-row{
-  min-height: 150px;
+  min-height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   max-width: 100%;
+  flex-wrap: wrap;
+  padding: 2px;
+  border-bottom: 2px solid black;
 
 }
 
@@ -42,6 +44,7 @@ main{
   background-color: cadetblue;
   min-height: 100px;
   padding: 1px;
+  margin: 1px;
   max-width: 24%;
   border: 1px solid black;
   border-radius: .25rem;

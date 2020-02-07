@@ -16,7 +16,7 @@ class SodaService {
 
 
   constructor() {
-    console.log("soda service works")
+
   }
 }
 

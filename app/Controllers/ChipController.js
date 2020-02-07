@@ -19,7 +19,6 @@ export default class ChipController {
 
 
   constructor() {
-    console.log("chip controller works")
     _draw()
   }
   addChip(event) {
@@ -32,6 +31,9 @@ export default class ChipController {
     console.log(newChip)
 
     _chipService.addChip(newChip)
+    formData.reset()
+    // @ts-ignore
+    $('#chip-form').modal('toggle');
     _draw()
   }
 
