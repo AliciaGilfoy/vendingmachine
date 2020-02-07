@@ -28,7 +28,6 @@ export default class ChipController {
       chipBrand: formData.chipBrand.value,
       chipPrice: formData.chipPrice.value
     }
-    console.log(newChip)
 
     _chipService.addChip(newChip)
     formData.reset()
