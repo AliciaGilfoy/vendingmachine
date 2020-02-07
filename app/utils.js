@@ -13,9 +13,9 @@ export const generateId = function () {
 export const generateRobotImg = function () {
   let result = "";
   let characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   let charactersLength = characters.length;
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 5; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
   let image = "https://robohash.org/" + result + ".png"
@@ -25,9 +25,9 @@ export const generateRobotImg = function () {
 export const generateMonsterImg = function () {
   let result = "";
   let characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   let charactersLength = characters.length;
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 5; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
   let image = "https://robohash.org/" + result + ".png?set=set2"
@@ -37,9 +37,9 @@ export const generateMonsterImg = function () {
 export const generateCatImg = function () {
   let result = "";
   let characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   let charactersLength = characters.length;
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 5; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
   let image = "https://robohash.org/" + result + ".png?set=set4 "
